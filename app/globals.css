@@ -11,7 +11,7 @@
   --accent-contrast: #100f0f;
   color: var(--text);
   background: var(--base);
-  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-atkinson-hyperlegible-mono), ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
   font-synthesis: none;
 }
 
