@@ -13,7 +13,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     env:
-      NPM_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

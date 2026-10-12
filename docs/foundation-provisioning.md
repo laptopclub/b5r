@@ -16,7 +16,7 @@ Last reviewed: 2026-10-12
 
 - [x] Repository is independent from Foundation workspaces.
 - [x] Foundation package registry is configured in `.npmrc` without a committed token.
-- [x] Vercel has `NPM_TOKEN` for production, preview and development.
+- [x] Vercel has `NODE_AUTH_TOKEN` for production, preview and development.
 - [x] CI uses the `PACKAGES_TOKEN` repository secret.
 - [x] Foundation package versions are pinned together.
 - [x] Client-specific agent guidance is committed.
