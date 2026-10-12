@@ -1,13 +1,9 @@
-import Link from "next/link";
 import { EnquiryForm } from "../components/enquiry-form";
 
 export default function HomePage() {
   return (
-    <main>
+    <div className="landing">
       <header>
-        <Link aria-label="b5r home" className="wordmark" href="/">
-          b5r
-        </Link>
         <p>Independent work by Dan Brazier.</p>
       </header>
 
@@ -25,6 +21,6 @@ export default function HomePage() {
         <p>Tell me a little about what you have in mind.</p>
         <EnquiryForm />
       </section>
-    </main>
+    </div>
   );
 }

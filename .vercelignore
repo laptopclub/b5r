@@ -1,0 +1,14 @@
+.git
+.vercel
+**/.vercel
+node_modules
+**/node_modules
+.next
+**/.next
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+*.tsbuildinfo
+.DS_Store
