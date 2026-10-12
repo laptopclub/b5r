@@ -16,7 +16,7 @@ Last reviewed: 2026-10-12
 
 - [x] Repository is independent from Foundation workspaces.
 - [x] Foundation package registry is configured in `.npmrc` without a committed token.
-- [ ] Add a GitHub classic personal access token with `read:packages` as `NODE_AUTH_TOKEN` in Vercel for production, preview and development.
+- [ ] Add the established GitHub Packages token as `NPM_TOKEN` in Vercel for production, preview and development.
 - [ ] Add that token as the `PACKAGES_TOKEN` repository secret for CI.
 - [x] Foundation package versions are pinned together.
 - [x] Client-specific agent guidance is committed.
