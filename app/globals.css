@@ -29,6 +29,9 @@
 }
 
 body { margin: 0; background: var(--base); }
+footer.bg-slate-50 { background: #000; color: var(--text); }
+footer.bg-slate-50 .text-slate-600 { color: var(--text-muted); }
+footer p:has(> a[href="https://laptopclub.net"]) { display: none; }
 .landing { width: min(100% - 2rem, 42rem); margin: 0 auto; padding: 2rem 0 4rem; }
 .landing header, .landing section { border-top: 1px solid var(--ui-3); padding: 1rem 0 2rem; }
 .landing header { border-top: 0; padding-top: 0; }
