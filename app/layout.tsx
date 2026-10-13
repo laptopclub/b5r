@@ -1,4 +1,4 @@
-import { SiteShell, type SiteChrome } from "@laptopclub/foundation-ui";
+import { SiteHeader, type SiteChrome } from "@laptopclub/foundation-ui";
 import type { Metadata } from "next";
 import { Atkinson_Hyperlegible_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,7 +23,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={atkinsonHyperlegibleMono.variable}>
-      <body><SiteShell site={site}>{children}</SiteShell></body>
+      <body>
+        <div className="site-shell">
+          <SiteHeader site={site} />
+          <main>{children}</main>
+          <footer className="site-footer">
+            <div className="site-footer-content">
+              <p>© 2026<br />B5R</p>
+              <div className="site-footer-links">
+                <a aria-label="GitHub" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
+                  <i aria-hidden="true" className="bi bi-github" />
+                </a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
