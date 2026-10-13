@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { sendEnquiry, type EnquiryState } from "../app/actions";
 
 const initialState: EnquiryState = { message: "", status: "idle" };
-const fieldClassName = "w-full border border-[var(--ui-3)] bg-[var(--base-2)] p-2 text-base leading-6 text-[var(--text)] outline-0 focus-visible:border-[var(--accent)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[var(--accent)]";
+const fieldClassName = "w-full border border-ui-strong bg-surface-raised p-2 text-base leading-6 text-ink outline-0 focus-visible:border-accent focus-visible:outline focus-visible:outline-1 focus-visible:outline-accent";
 
 export function EnquiryForm() {
   const [state, formAction, pending] = useActionState(sendEnquiry, initialState);
@@ -25,7 +25,7 @@ export function EnquiryForm() {
       <label className="text-base leading-6" htmlFor="message">Message</label>
       <textarea className={`${fieldClassName} resize-y`} id="message" name="message" required rows={6} />
 
-      <button className="mt-2 w-full cursor-pointer border border-[var(--ui-3)] bg-[var(--base-2)] p-2 text-left text-base leading-6 text-[var(--text)] outline-0 hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:outline-0 disabled:cursor-wait disabled:bg-[var(--ui)] disabled:text-[var(--text-muted)]" disabled={pending} type="submit">
+      <button className="mt-2 w-full cursor-pointer border border-accent bg-transparent p-2 text-left text-base leading-6 text-accent outline-0 hover:bg-accent hover:text-accent-contrast focus-visible:bg-accent focus-visible:text-accent-contrast focus-visible:outline-0 disabled:cursor-wait disabled:border-ui disabled:bg-transparent disabled:text-ink-muted" disabled={pending} type="submit">
         {pending ? "Sending..." : "Send enquiry"}
       </button>
       <p aria-live="polite" className={`m-0 min-h-6 text-base leading-6 ${state.status === "error" ? "underline" : ""}`}>

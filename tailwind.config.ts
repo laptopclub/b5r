@@ -10,6 +10,24 @@ const config = {
   presets: [foundationPreset],
   theme: {
     extend: {
+      colors: {
+        accent: {
+          DEFAULT: "var(--accent)",
+          contrast: "var(--accent-contrast)"
+        },
+        ink: {
+          DEFAULT: "var(--text)",
+          muted: "var(--text-muted)"
+        },
+        surface: {
+          base: "var(--base)",
+          raised: "var(--base-2)"
+        },
+        ui: {
+          DEFAULT: "var(--ui)",
+          strong: "var(--ui-3)"
+        }
+      },
       fontFamily: {
         mono: ["var(--font-atkinson-hyperlegible-mono)", "ui-monospace", "monospace"]
       }

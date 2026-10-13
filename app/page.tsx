@@ -7,7 +7,7 @@ export default function HomePage() {
         <p className="m-0 mt-4 text-base leading-6">Independent work by Dan Brazier.</p>
       </header>
 
-      <section aria-labelledby="enquiry-heading" className="border-t border-[var(--ui-3)] py-4 pb-8">
+      <section aria-labelledby="enquiry-heading" className="border-t border-ui-strong py-4 pb-8">
         <h1 className="m-0 text-base font-bold leading-6" id="enquiry-heading">Enquiry</h1>
         <p className="m-0 mt-4 text-base leading-6">Tell me a little about what you have in mind.</p>
         <EnquiryForm />
