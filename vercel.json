@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "printf '@laptopclub:registry=https://npm.pkg.github.com\\n//npm.pkg.github.com/:_authToken=%s\\n' \"$NPM_TOKEN\" > /tmp/.npmrc && NPM_CONFIG_USERCONFIG=/tmp/.npmrc pnpm install --frozen-lockfile",
   "headers": [
     {
       "source": "/(.*)",
