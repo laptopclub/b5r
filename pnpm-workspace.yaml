@@ -1,2 +1,5 @@
 allowBuilds:
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@laptopclub/foundation-config@0.1.33'
+  - '@laptopclub/foundation-ui@0.1.33'

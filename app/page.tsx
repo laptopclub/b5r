@@ -11,7 +11,7 @@ export default function HomePage() {
         <h1 id="links-heading">Elsewhere</h1>
         <nav aria-label="Social links">
           <a href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
-            GitHub <span aria-hidden="true">↗</span>
+            <i aria-hidden="true" className="bi bi-github" /> GitHub <span aria-hidden="true">↗</span>
           </a>
         </nav>
       </section>

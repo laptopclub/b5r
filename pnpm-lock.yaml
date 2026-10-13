@@ -110,8 +110,8 @@ importers:
   .:
     dependencies:
       '@laptopclub/foundation-ui':
-        specifier: 0.1.32
-        version: 0.1.32(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+        specifier: 0.1.33
+        version: 0.1.33(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -123,8 +123,8 @@ importers:
         version: 19.3.0(react@19.3.0)
     devDependencies:
       '@laptopclub/foundation-config':
-        specifier: 0.1.32
-        version: 0.1.32(tailwindcss@3.4.19)
+        specifier: 0.1.33
+        version: 0.1.33(tailwindcss@3.4.19)
       '@types/node':
         specifier: 24.13.4
         version: 24.13.4
@@ -480,13 +480,13 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@laptopclub/foundation-config@0.1.32':
-    resolution: {integrity: sha512-nbXeiTs669YaNUlWDcBmaiNo4Ex3gCLdrZq0EiedkOo8MMxdR5DPw9NDQ5/dN66/B1SYddBPEzl//SMHh5m3ow==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-config/0.1.32/f095607a552349cf3c5b0386e53a0913d44534fd}
+  '@laptopclub/foundation-config@0.1.33':
+    resolution: {integrity: sha512-Fb11LIPR3Cv+5AS8K55ZBmtJBb/4unhpWxYr0XVDMCsWodjitl1dzhKZTEVw7qaeZC/OINrCujFqrVxsRtraTg==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-config/0.1.33/09001d83d077734f10e893f3804ada7a1d9d12f5}
     peerDependencies:
       tailwindcss: ^3.4.0
 
-  '@laptopclub/foundation-ui@0.1.32':
-    resolution: {integrity: sha512-yp14jXzfFZ7Rzv9isemIh9Nj6xf3E0rbvEbEB8DyvV3Z63jywP3y3+KeHHtBdI/YkMZhPMcyg0yRrqyuJ5rvHg==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-ui/0.1.32/1f7e0d7aaff1c3478dd2114ece9d6351017269d9}
+  '@laptopclub/foundation-ui@0.1.33':
+    resolution: {integrity: sha512-dHn8hrA7MvuzLlnOYnB8ZK1JTIRAinsS5KS5baf/n94tv/0VRu7omutPm2oVs8kiIGAilWmPtFb5NlXmMizxAw==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-ui/0.1.33/287eed7ef20d6fd4bb87b8433fc6fdb562b81eef}
     peerDependencies:
       next: ^16.0.0
       react: ^19.0.0
@@ -915,6 +915,9 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+
+  bootstrap-icons@1.13.2:
+    resolution: {integrity: sha512-fAU1Ly3dH7hwRg+CB8EZ0Vl0fF80zgXHeUVJyfUOKzoURr+TbwISbCW5tKUoQLERaWYG2emTCybcPbD96hdD1A==}
 
   brace-expansion@1.1.21:
     resolution: {integrity: sha512-9zeA+KLZNNzglF2TPKRQEDyx6Yby7daAkuy8MiPzpXPsYDWi/DRM8jmwUDxokQjYqBpv5DgPiwD4h4ZZSy1Ujw==}
@@ -2460,15 +2463,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@laptopclub/foundation-config@0.1.32(tailwindcss@3.4.19)':
+  '@laptopclub/foundation-config@0.1.33(tailwindcss@3.4.19)':
     dependencies:
       tailwindcss: 3.4.19
 
-  '@laptopclub/foundation-ui@0.1.32(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+  '@laptopclub/foundation-ui@0.1.33(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@portabletext/react': 3.2.4(react@19.3.0)
       '@portabletext/types': 2.0.15
       '@sanity/image-url': 2.1.1
+      bootstrap-icons: 1.13.2
       clsx: 2.1.1
       next: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react: 19.3.0
@@ -2868,6 +2872,8 @@ snapshots:
   baseline-browser-mapping@2.11.28: {}
 
   binary-extensions@2.3.0: {}
+
+  bootstrap-icons@1.13.2: {}
 
   brace-expansion@1.1.21:
     dependencies:
