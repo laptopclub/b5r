@@ -7,7 +7,14 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./node_modules/@laptopclub/foundation-ui/dist/**/*.{js,mjs}"
   ],
-  presets: [foundationPreset]
+  presets: [foundationPreset],
+  theme: {
+    extend: {
+      fontFamily: {
+        mono: ["var(--font-atkinson-hyperlegible-mono)", "ui-monospace", "monospace"]
+      }
+    }
+  }
 } satisfies Config;
 
 export default config;

@@ -23,15 +23,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={atkinsonHyperlegibleMono.variable}>
-      <body>
-        <div className="site-shell">
+      <body className="bg-[var(--base)] font-mono text-[var(--text)] selection:bg-[var(--accent)] selection:text-[var(--accent-contrast)]">
+        <div className="flex min-h-screen flex-col">
           <SiteHeader site={site} />
-          <main>{children}</main>
-          <footer className="site-footer">
-            <div className="site-footer-content">
-              <p>© 2026<br />B5R</p>
-              <div className="site-footer-links">
-                <a aria-label="GitHub" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
+          <main className="flex-1">{children}</main>
+          <footer className="bg-[var(--base)] px-4 py-10 text-[var(--text-muted)]">
+            <div className="flex w-full items-end justify-between max-[40rem]:flex-col max-[40rem]:items-start max-[40rem]:gap-4">
+              <p className="m-0 uppercase leading-6">© 2026<br />B5R</p>
+              <div className="flex items-center max-[40rem]:order-[-1]">
+                <a aria-label="GitHub" className="text-xl leading-none hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
                   <i aria-hidden="true" className="bi bi-github" />
                 </a>
               </div>
