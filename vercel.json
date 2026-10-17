@@ -13,6 +13,12 @@
       "has": [{ "type": "host", "value": "www\\.b5r\\.co\\.uk" }],
       "destination": "https://b5r.uk/$1",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www\\.b5r\\.uk" }],
+      "destination": "https://b5r.uk/$1",
+      "permanent": true
     }
   ],
   "headers": [

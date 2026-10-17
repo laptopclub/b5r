@@ -26,8 +26,8 @@ Last reviewed: 2026-10-12
 
 - [x] Vercel project is linked to `laptopclub/b5r` and deploys `main` to production.
 - [x] Node.js 24.x is configured in Vercel.
-- [ ] Production domains `b5r.uk` and `www.b5r.uk` are assigned.
-- [ ] `b5r.co.uk` and `www.b5r.co.uk` permanently redirect to `b5r.uk`.
+- [x] Production domains `b5r.uk` and `www.b5r.uk` are assigned.
+- [x] `b5r.co.uk`, `www.b5r.co.uk` and `www.b5r.uk` permanently redirect to `b5r.uk`.
 - [x] Resend enquiry environment variables are configured in Vercel.
 
 ### Content and branding
