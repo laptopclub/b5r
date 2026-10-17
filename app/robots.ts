@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       userAgent: "*"
     },
-    sitemap: "https://b5r.co.uk/sitemap.xml"
+    sitemap: "https://b5r.uk/sitemap.xml"
   };
 }

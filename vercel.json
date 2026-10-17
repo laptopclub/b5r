@@ -1,6 +1,20 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "printf '@laptopclub:registry=https://npm.pkg.github.com\\n//npm.pkg.github.com/:_authToken=%s\\n' \"$NPM_TOKEN\" > /tmp/.npmrc && NPM_CONFIG_USERCONFIG=/tmp/.npmrc pnpm install --frozen-lockfile",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "b5r\\.co\\.uk" }],
+      "destination": "https://b5r.uk/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www\\.b5r\\.co\\.uk" }],
+      "destination": "https://b5r.uk/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

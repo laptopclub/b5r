@@ -5,7 +5,8 @@ Last reviewed: 2026-10-12
 ## Site
 
 - Repository: `laptopclub/b5r`
-- Production URL: https://b5r.co.uk
+- Production URL: https://b5r.uk
+- Redirect domain: https://b5r.co.uk
 - Vercel project: `laptopclub/b5r`
 - Foundation packages: `@laptopclub/foundation-ui` and `@laptopclub/foundation-config` 0.1.32
 - Content model: code-managed landing page. Sanity is intentionally deferred.
@@ -25,7 +26,8 @@ Last reviewed: 2026-10-12
 
 - [x] Vercel project is linked to `laptopclub/b5r` and deploys `main` to production.
 - [x] Node.js 24.x is configured in Vercel.
-- [x] Production domains `b5r.co.uk` and `www.b5r.co.uk` are assigned.
+- [ ] Production domains `b5r.uk` and `www.b5r.uk` are assigned.
+- [ ] `b5r.co.uk` and `www.b5r.co.uk` permanently redirect to `b5r.uk`.
 - [x] Resend enquiry environment variables are configured in Vercel.
 
 ### Content and branding
@@ -48,7 +50,7 @@ Last reviewed: 2026-10-12
 Run from the Foundation repository after Foundation package upgrades:
 
 ```bash
-pnpm validate:site ../b5r --run-checks --url https://b5r.co.uk --smoke-paths /,/sitemap.xml,/robots.txt
+pnpm validate:site ../b5r --run-checks --url https://b5r.uk --smoke-paths /,/sitemap.xml,/robots.txt
 ```
 
 The Foundation validator's default `/studio` smoke test does not apply while b5r is static.

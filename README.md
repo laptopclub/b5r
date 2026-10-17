@@ -1,6 +1,6 @@
 # b5r
 
-Minimal landing page for [b5r.co.uk](https://b5r.co.uk), deployed on Vercel.
+Minimal landing page for [b5r.uk](https://b5r.uk), deployed on Vercel. `b5r.co.uk` redirects here.
 
 ## Local development
 

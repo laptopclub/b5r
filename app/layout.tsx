@@ -16,7 +16,7 @@ const site: SiteChrome = {
 
 export const metadata: Metadata = {
   description: "b5r - independent work by Dan Brazier.",
-  metadataBase: new URL("https://b5r.co.uk"),
+  metadataBase: new URL("https://b5r.uk"),
   title: "b5r"
 };
 

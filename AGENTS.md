@@ -3,7 +3,7 @@
 ## Project summary
 
 - Site: b5r, independent work by Dan Brazier.
-- Production URL: https://b5r.co.uk
+- Production URL: https://b5r.uk
 - Foundation packages: `@laptopclub/foundation-ui` and `@laptopclub/foundation-config` 0.1.32.
 - Content is currently code-managed. Do not introduce Sanity, a CMS or draft-mode infrastructure unless explicitly requested.
 
