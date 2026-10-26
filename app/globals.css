@@ -10,7 +10,7 @@
   --ui: #282726;
   --ui-2: #343331;
   --ui-3: #403e3c;
-  --text: #cecdc3;
+  --text: #b7b5ac;
   --text-muted: #878580;
   --text-faint: #575653;
   --accent: #4385be;
@@ -22,6 +22,6 @@
   --color-brand-900: 16 15 15;
   --color-surface-canvas: 16 15 15;
   --color-surface-muted: 28 27 26;
-  --color-ink-base: 206 205 195;
+  --color-ink-base: 183 181 172;
   --color-ink-muted: 135 133 128;
 }

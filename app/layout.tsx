@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <footer className="bg-surface-base px-4 py-10 text-ink-muted">
             <div className="flex w-full justify-end max-[40rem]:justify-start">
               <div className="flex items-center">
-                <a aria-label="GitHub" className="text-xl leading-none text-ink-muted hover:bg-accent hover:text-accent-contrast focus-visible:bg-accent focus-visible:text-accent-contrast focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
+                <a aria-label="GitHub" className="text-xl leading-none text-ink hover:bg-accent hover:text-accent-contrast focus-visible:bg-accent focus-visible:text-accent-contrast focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
                   <i aria-hidden="true" className="bi bi-github" />
                 </a>
               </div>
