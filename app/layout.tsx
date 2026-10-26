@@ -1,5 +1,6 @@
-import { SiteHeader, type SiteChrome } from "@laptopclub/foundation-ui";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { EnquiryModal } from "../components/enquiry-modal";
 import { Atkinson_Hyperlegible_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -7,12 +8,6 @@ const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
   subsets: ["latin"],
   variable: "--font-atkinson-hyperlegible-mono"
 });
-
-const site: SiteChrome = {
-  copyrightStartYear: 2026,
-  logoText: "b5r",
-  title: "b5r"
-};
 
 export const metadata: Metadata = {
   description: "b5r - independent work by Dan Brazier.",
@@ -25,8 +20,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={atkinsonHyperlegibleMono.variable}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <div className="flex min-h-screen flex-col">
-          <SiteHeader site={site} />
-          <main className="flex-1">{children}</main>
+          <header className="flex items-center justify-between px-4 py-4">
+            <Link className="text-base font-bold leading-none text-ink" href="/">B5R</Link>
+            <EnquiryModal />
+          </header>
+          <main className="flex flex-1">{children}</main>
           <footer className="bg-surface-base px-4 py-10 text-ink-muted">
             <div className="flex w-full items-end justify-between max-[40rem]:flex-col max-[40rem]:items-start max-[40rem]:gap-4">
               <p className="m-0 uppercase leading-6">© 2026<br />B5R</p>
