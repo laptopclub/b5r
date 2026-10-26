@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { EnquiryModal } from "../components/enquiry-modal";
 import { Atkinson_Hyperlegible_Mono } from "next/font/google";
 import "./globals.css";
@@ -20,8 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={atkinsonHyperlegibleMono.variable}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <div className="flex min-h-screen flex-col">
-          <header className="flex items-center justify-between px-4 py-4">
-            <Link className="text-base font-bold leading-none text-ink" href="/">B5R</Link>
+          <header className="flex items-center justify-end px-4 py-4">
             <EnquiryModal />
           </header>
           <main className="flex flex-1">{children}</main>
