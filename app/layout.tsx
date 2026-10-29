@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/"
   },
-  description: "b5r - independent work by Dan Brazier.",
+  description: "b5r.",
   metadataBase: new URL("https://b5r.uk"),
   title: "b5r"
 };
