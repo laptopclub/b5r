@@ -9,6 +9,9 @@ const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
 });
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/"
+  },
   description: "b5r - independent work by Dan Brazier.",
   metadataBase: new URL("https://b5r.uk"),
   title: "b5r"
