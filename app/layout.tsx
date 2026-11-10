@@ -26,13 +26,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <EnquiryModal />
           </header>
           <main className="flex flex-1">{children}</main>
-          <footer className="bg-surface-base px-4 py-10 text-ink-muted">
+          <footer className="bg-surface-base px-4 py-10">
             <div className="flex w-full justify-end max-[40rem]:justify-start">
-              <div className="flex items-center">
-                <a aria-label="GitHub" className="text-xl leading-none text-ink hover:bg-accent hover:text-accent-contrast focus-visible:bg-accent focus-visible:text-accent-contrast focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
+              <nav aria-label="Social links" className="flex gap-2">
+                <a aria-label="GitHub" className="flex size-12 items-center justify-center border-2 border-ink text-2xl leading-none text-ink hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">
                   <i aria-hidden="true" className="bi bi-github" />
                 </a>
-              </div>
+                <a aria-label="LinkedIn" className="flex size-12 items-center justify-center border-2 border-ink text-2xl leading-none text-ink hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" href="https://www.linkedin.com/in/danbrazieruk/" rel="me noreferrer" target="_blank">
+                  <i aria-hidden="true" className="bi bi-linkedin" />
+                </a>
+                <a aria-label="Instagram" className="flex size-12 items-center justify-center border-2 border-ink text-2xl leading-none text-ink hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" href="https://www.instagram.com/danb5r/" rel="me noreferrer" target="_blank">
+                  <i aria-hidden="true" className="bi bi-instagram" />
+                </a>
+              </nav>
             </div>
           </footer>
         </div>
