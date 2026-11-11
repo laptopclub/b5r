@@ -10,8 +10,8 @@
   --ui: #282726;
   --ui-2: #343331;
   --ui-3: #403e3c;
-  --text: #b7b5ac;
-  --text-muted: #878580;
+  --text: #9f9d96;
+  --text-muted: #6f6e69;
   --text-faint: #575653;
   --accent: #4385be;
   --accent-contrast: #100f0f;
@@ -22,8 +22,8 @@
   --color-brand-900: 16 15 15;
   --color-surface-canvas: 16 15 15;
   --color-surface-muted: 28 27 26;
-  --color-ink-base: 183 181 172;
-  --color-ink-muted: 135 133 128;
+  --color-ink-base: 159 157 150;
+  --color-ink-muted: 111 110 105;
 }
 
 body {
