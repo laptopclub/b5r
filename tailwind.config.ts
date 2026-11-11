@@ -29,7 +29,8 @@ const config = {
         }
       },
       fontFamily: {
-        mono: ["var(--font-atkinson-hyperlegible-mono)", "ui-monospace", "monospace"]
+        mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
+        pixel: ["var(--font-geist-pixel)", "ui-monospace", "monospace"]
       }
     }
   }

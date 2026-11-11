@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { EnquiryModal } from "../components/enquiry-modal";
-import { Atkinson_Hyperlegible_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
-  subsets: ["latin"],
-  variable: "--font-atkinson-hyperlegible-mono"
+const geistMono = localFont({
+  src: "./fonts/GeistMono-Variable.woff2",
+  variable: "--font-geist-mono"
+});
+
+const geistPixel = localFont({
+  src: "./fonts/GeistPixelVF.woff2",
+  variable: "--font-geist-pixel"
 });
 
 export const metadata: Metadata = {
@@ -19,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={atkinsonHyperlegibleMono.variable}>
+    <html lang="en" className={`${geistMono.variable} ${geistPixel.variable}`}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <div className="flex min-h-screen flex-col">
           <header className="flex items-center justify-end px-4 py-4">

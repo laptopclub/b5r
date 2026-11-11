@@ -13,7 +13,7 @@
 - Use the shared Foundation shell for common site chrome and upgrade all installed `@laptopclub/foundation-*` packages together.
 - Put reusable framework fixes in `laptopclub/foundation`.
 - Do not edit installed Foundation package code.
-- Preserve the minimal, text-forward b5r design and Atkinson Hyperlegible Mono font.
+- Preserve the minimal, text-forward b5r design and locally hosted Geist Mono and Geist Pixel fonts.
 - Never commit `.env` files, package tokens or API keys.
 - Do not add dependencies without explicit approval.
 

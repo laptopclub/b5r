@@ -35,7 +35,7 @@ Last reviewed: 2026-10-12
 - [x] Foundation `SiteShell` provides the shared header, footer and progressive viewport blurs.
 - [x] A b5r-generated favicon and Apple touch icon are provided.
 - [x] `robots.txt` and `sitemap.xml` are provided for the static homepage.
-- [x] b5r brand tokens, Flexoki Dark palette and Atkinson Hyperlegible Mono remain site-owned.
+- [x] b5r brand tokens, Flexoki Dark palette and locally hosted Geist Mono and Geist Pixel remain site-owned.
 - [x] Current content and the Resend enquiry form remain site-owned.
 
 ### Deferred intentionally
