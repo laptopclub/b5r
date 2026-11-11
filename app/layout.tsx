@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <EnquiryModal />
           </header>
           <main className="flex flex-1">{children}</main>
-          <footer className="bg-surface-base px-4 py-10">
+          <footer className="px-4 py-10">
             <div className="flex w-full justify-end max-[40rem]:justify-start">
               <nav aria-label="Social links" className="flex gap-2 border-t-4 border-ink pt-4">
                 <a aria-label="GitHub" className="flex size-8 items-center justify-center border border-ink text-lg leading-none text-ink hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" href="https://github.com/danb5r" rel="me noreferrer" target="_blank">

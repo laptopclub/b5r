@@ -25,3 +25,8 @@
   --color-ink-base: 183 181 172;
   --color-ink-muted: 135 133 128;
 }
+
+body {
+  background-image: url("/images/slash-it.png");
+  background-repeat: repeat;
+}
