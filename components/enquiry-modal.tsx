@@ -8,7 +8,7 @@ export function EnquiryModal() {
 
   return (
     <>
-      <button className="border border-ink bg-transparent px-3 py-2 text-sm leading-none text-ink outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" onClick={() => setIsOpen(true)} type="button">
+      <button className="border border-ink bg-transparent px-3 py-2 font-pixel text-sm leading-none text-ink outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" onClick={() => setIsOpen(true)} type="button">
         Enquiry
       </button>
       {isOpen ? (
@@ -16,7 +16,7 @@ export function EnquiryModal() {
           <div className="w-full max-w-xl border border-ui-strong bg-surface-base p-4 shadow-2xl sm:p-6">
             <div className="flex items-start justify-between gap-4">
               <h1 className="m-0 text-base font-bold leading-6">Enquiry</h1>
-              <button aria-label="Close enquiry form" className="border border-ink bg-transparent px-2 py-1 text-sm leading-none text-ink outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" onClick={() => setIsOpen(false)} type="button">
+              <button aria-label="Close enquiry form" className="border border-ink bg-transparent px-2 py-1 font-pixel text-sm leading-none text-ink outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" onClick={() => setIsOpen(false)} type="button">
                 Close
               </button>
             </div>
