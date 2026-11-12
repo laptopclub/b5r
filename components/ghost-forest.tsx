@@ -9,6 +9,12 @@ type ForestLayerProps = {
   depth: number;
 };
 
+type PineProps = {
+  scale: number;
+  x: number;
+  y: number;
+};
+
 function useReducedMotion() {
   const [reducedMotion, setReducedMotion] = useState(false);
 
@@ -38,24 +44,63 @@ function ForestLayer({ children, className, depth }: ForestLayerProps) {
   );
 }
 
+function Pine({ scale, x, y }: PineProps) {
+  return (
+    <g transform={`translate(${x} ${y}) scale(${scale})`}>
+      <path d="M0-280C8-246 16-226 30-207L16-210C35-182 55-162 68-143L29-150C56-118 78-91 92-63L42-72C64-45 78-21 88 0H-88C-78-21-64-45-42-72L-92-63C-78-91-56-118-29-150L-68-143C-55-162-35-182-16-210L-30-207C-16-226-8-246 0-280Z" />
+      <path d="M-7-88H7V0H-7Z" opacity="0.65" />
+    </g>
+  );
+}
+
 export function GhostForest() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden text-ink">
-      <ForestLayer className="absolute -bottom-8 -left-[10%] w-[120%] opacity-[0.07] blur-[1px]" depth={0.08}>
-        <svg className="h-auto w-full" fill="none" stroke="currentColor" strokeLinecap="square" strokeWidth="5" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
-          <path d="M100 480V150M100 270L20 205M100 310L190 220M100 220L55 145M100 245L150 165M360 480V90M360 260L255 175M360 285L470 175M360 180L310 95M360 215L420 105M760 480V180M760 285L675 220M760 320L850 235M760 235L715 165M760 255L815 180M1160 480V115M1160 250L1065 170M1160 290L1265 180M1160 170L1110 95M1160 215L1225 130" />
+      <ForestLayer className="absolute -bottom-8 -left-[10%] w-[120%] opacity-[0.06] blur-[1px]" depth={0.08}>
+        <svg className="h-auto w-full" fill="currentColor" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
+          <Pine scale={0.54} x={50} y={480} />
+          <Pine scale={0.72} x={130} y={480} />
+          <Pine scale={0.46} x={205} y={480} />
+          <Pine scale={0.64} x={280} y={480} />
+          <Pine scale={0.5} x={365} y={480} />
+          <Pine scale={0.78} x={445} y={480} />
+          <Pine scale={0.48} x={535} y={480} />
+          <Pine scale={0.62} x={610} y={480} />
+          <Pine scale={0.44} x={690} y={480} />
+          <Pine scale={0.76} x={760} y={480} />
+          <Pine scale={0.52} x={850} y={480} />
+          <Pine scale={0.68} x={925} y={480} />
+          <Pine scale={0.46} x={1015} y={480} />
+          <Pine scale={0.74} x={1085} y={480} />
+          <Pine scale={0.5} x={1175} y={480} />
+          <Pine scale={0.66} x={1250} y={480} />
+          <Pine scale={0.48} x={1335} y={480} />
+          <Pine scale={0.7} x={1405} y={480} />
         </svg>
       </ForestLayer>
 
-      <ForestLayer className="absolute -bottom-12 -left-[12%] w-[124%] opacity-[0.09]" depth={0.16}>
-        <svg className="h-auto w-full" fill="none" stroke="currentColor" strokeLinecap="square" strokeWidth="7" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
-          <path d="M215 480V140M215 305L110 230M215 335L330 230M215 240L150 150M215 270L290 165M555 480V65M555 245L425 160M555 290L700 165M555 155L490 70M555 205L645 105M980 480V145M980 295L850 205M980 335L1110 225M980 210L920 135M980 245L1045 155M1330 480V105M1330 275L1210 185M1330 320L1425 230M1330 175L1285 105M1330 215L1390 145" />
+      <ForestLayer className="absolute -bottom-12 -left-[12%] w-[124%] opacity-[0.08]" depth={0.16}>
+        <svg className="h-auto w-full" fill="currentColor" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
+          <Pine scale={0.88} x={90} y={480} />
+          <Pine scale={1.12} x={245} y={480} />
+          <Pine scale={0.82} x={410} y={480} />
+          <Pine scale={1.26} x={555} y={480} />
+          <Pine scale={0.9} x={735} y={480} />
+          <Pine scale={1.18} x={885} y={480} />
+          <Pine scale={0.84} x={1060} y={480} />
+          <Pine scale={1.28} x={1210} y={480} />
+          <Pine scale={0.94} x={1390} y={480} />
         </svg>
       </ForestLayer>
 
-      <ForestLayer className="absolute -bottom-20 -left-[15%] w-[130%] opacity-[0.12]" depth={0.28}>
-        <svg className="h-auto w-full" fill="none" stroke="currentColor" strokeLinecap="square" strokeWidth="10" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
-          <path d="M85 480V200M85 340L-20 265M85 370L205 275M85 265L30 190M85 305L155 225M455 480V115M455 310L325 225M455 345L605 235M455 195L390 110M455 250L545 150M850 480V160M850 320L705 225M850 355L1005 245M850 235L790 155M850 280L945 190M1240 480V120M1240 315L1110 220M1240 350L1400 250M1240 200L1175 110M1240 245L1330 145" />
+      <ForestLayer className="absolute -bottom-20 -left-[15%] w-[130%] opacity-[0.1]" depth={0.28}>
+        <svg className="h-auto w-full" fill="currentColor" viewBox="0 0 1440 480" xmlns="http://www.w3.org/2000/svg">
+          <Pine scale={1.5} x={20} y={480} />
+          <Pine scale={1.85} x={285} y={480} />
+          <Pine scale={1.42} x={570} y={480} />
+          <Pine scale={1.95} x={835} y={480} />
+          <Pine scale={1.48} x={1140} y={480} />
+          <Pine scale={1.82} x={1390} y={480} />
         </svg>
       </ForestLayer>
     </div>
