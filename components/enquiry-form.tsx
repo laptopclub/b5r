@@ -23,7 +23,7 @@ export function EnquiryForm() {
       <input autoComplete="email" className={fieldClassName} id="email" name="email" required type="email" />
 
       <label className="text-base leading-6" htmlFor="message">Message</label>
-      <textarea className={`${fieldClassName} resize-y`} id="message" name="message" required rows={6} />
+      <textarea className={`${fieldClassName} h-40 resize-none overflow-y-auto`} id="message" name="message" required rows={6} />
 
       <button className="mt-2 ml-auto block cursor-pointer border border-ink bg-transparent px-4 py-2 text-center font-mono text-sm leading-none text-ink uppercase outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0 disabled:cursor-wait disabled:border-ui disabled:bg-transparent disabled:text-ink-muted" disabled={pending} type="submit">
         {pending ? "Sending..." : "Send enquiry"}
