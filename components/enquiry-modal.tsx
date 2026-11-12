@@ -12,7 +12,7 @@ export function EnquiryModal() {
         Enquiry
       </button>
       {isOpen ? (
-        <div aria-modal="true" className="fixed inset-0 z-[70] grid place-items-center bg-black/70 p-4" role="dialog">
+        <div aria-modal="true" className="fixed inset-0 z-[70] grid place-items-center bg-black/70 p-4 backdrop-blur-sm" role="dialog">
           <div className="w-full max-w-xl border border-ui-strong bg-surface-base p-4 shadow-2xl sm:p-6">
             <div className="flex items-start justify-between gap-4">
               <h1 className="m-0 font-pixel text-base font-bold leading-6">Enquiry</h1>
