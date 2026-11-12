@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AxisIndicators } from "../components/axis-indicators";
 import { EnquiryModal } from "../components/enquiry-modal";
+import { MarbleParallax } from "../components/marble-parallax";
 import { PointerPositionProvider } from "../components/pointer-position-provider";
 import { RockHornsIcon } from "../components/rock-horns-icon";
 import localFont from "next/font/local";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${geistMono.variable} ${geistPixel.variable} ${melvorn.variable}`}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <PointerPositionProvider>
+          <MarbleParallax />
           <div className="relative z-10 flex min-h-screen flex-col">
             <header className="flex items-center justify-end px-4 py-4">
               <EnquiryModal />
