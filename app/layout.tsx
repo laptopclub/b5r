@@ -51,7 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div className="border-t-4 border-ink pt-2">
                   <div className="flex h-8 border border-ink">
                     <RockHornsIcon className="size-[30px] shrink-0 text-ink" />
-                    <p className="m-0 flex items-center px-2 font-mono text-sm leading-none">© 2026 B5r</p>
+                    <p className="m-0 flex items-center px-2 font-mono text-sm leading-none">© 2026 B5R</p>
                   </div>
                 </div>
                 <nav aria-label="Social links" className="flex gap-2 border-t-4 border-ink pt-2">
