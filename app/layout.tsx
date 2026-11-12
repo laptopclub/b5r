@@ -14,6 +14,11 @@ const geistPixel = localFont({
   variable: "--font-geist-pixel"
 });
 
+const melvorn = localFont({
+  src: "./fonts/MelvornRegular-KVrmo.ttf",
+  variable: "--font-melvorn"
+});
+
 export const metadata: Metadata = {
   alternates: {
     canonical: "/"
@@ -25,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geistMono.variable} ${geistPixel.variable}`}>
+    <html lang="en" className={`${geistMono.variable} ${geistPixel.variable} ${melvorn.variable}`}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <div className="flex min-h-screen flex-col">
           <header className="flex items-center justify-end px-4 py-4">

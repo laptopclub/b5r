@@ -29,6 +29,7 @@ const config = {
         }
       },
       fontFamily: {
+        display: ["var(--font-melvorn)", "serif"],
         mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
         pixel: ["var(--font-geist-pixel)", "ui-monospace", "monospace"]
       }
