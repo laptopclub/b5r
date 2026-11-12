@@ -28,7 +28,7 @@ export function ArtifactParallax() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-[6] overflow-hidden">
       <div
-        className="absolute -inset-12 bg-cover bg-center opacity-[0.18] mix-blend-screen"
+        className="absolute -inset-12 bg-cover bg-center opacity-[0.1] mix-blend-screen"
         style={{
           backgroundImage: "url('/images/artifact-texture.jpg')",
           filter: "grayscale(1) contrast(280%) brightness(1.35)",
