@@ -26,7 +26,7 @@ export function EnquiryForm() {
       <textarea className={`${fieldClassName} h-40 resize-none overflow-y-auto`} id="message" name="message" required rows={6} />
 
       <button className="mt-2 ml-auto block cursor-pointer border border-ink bg-transparent px-4 py-2 text-center font-mono text-sm leading-none text-ink uppercase outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0 disabled:cursor-wait disabled:border-ui disabled:bg-transparent disabled:text-ink-muted" disabled={pending} type="submit">
-        {pending ? "Sending..." : "Send enquiry"}
+        {pending ? "SENDING..." : "SUBMIT"}
       </button>
       <p aria-live="polite" className={`m-0 min-h-6 text-base leading-6 ${state.status === "error" ? "underline" : ""}`}>
         {state.message}

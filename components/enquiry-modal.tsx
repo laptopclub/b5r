@@ -9,7 +9,7 @@ export function EnquiryModal() {
   return (
     <>
       <button className="border border-ink bg-transparent px-3 py-2 font-mono text-sm leading-none text-ink uppercase outline-0 hover:bg-ink hover:text-surface-base focus-visible:bg-ink focus-visible:text-surface-base focus-visible:outline-0" onClick={() => setIsOpen(true)} type="button">
-        Enquiry
+        GET IN TOUCH
       </button>
       {isOpen ? (
         <div aria-modal="true" className="fixed inset-0 z-[70] grid place-items-center bg-black/70 p-4 backdrop-blur-sm" role="dialog">
