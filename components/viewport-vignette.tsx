@@ -28,7 +28,7 @@ export function ViewportVignette() {
   const y = reducedMotion ? 0 : (position.y - 50) * 0.22;
 
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-[9] overflow-hidden">
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-[7] overflow-hidden">
       <div className="absolute -left-[24vw] -top-[20vh] h-[44vh] w-[76vw] blur-3xl" style={{ backgroundImage: gradient, transform: `translate3d(${-x}px, ${-y}px, 0) rotate(-18deg)` }} />
       <div className="absolute -right-[22vw] -top-[26vh] h-[38vh] w-[72vw] blur-3xl" style={{ backgroundImage: gradient, transform: `translate3d(${-x * 0.8}px, ${-y * 0.8}px, 0) rotate(14deg)` }} />
       <div className="absolute -bottom-[22vh] -left-[18vw] h-[42vh] w-[70vw] blur-3xl" style={{ backgroundImage: gradient, transform: `translate3d(${-x * 0.9}px, ${-y * 0.9}px, 0) rotate(12deg)` }} />

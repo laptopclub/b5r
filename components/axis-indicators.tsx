@@ -8,7 +8,7 @@ export function AxisIndicators() {
   const position = usePointerPosition();
 
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-50">
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-[8]">
       <div className="absolute bottom-4 left-1/2 h-6 w-[min(18rem,calc(100vw-2rem))] -translate-x-1/2">
         <div className="absolute inset-x-0 top-1/2 h-px bg-ink-muted" />
         {ticks.map((offset) => (

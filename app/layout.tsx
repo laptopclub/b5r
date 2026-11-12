@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArtifactParallax } from "../components/artifact-parallax";
 import { AxisIndicators } from "../components/axis-indicators";
 import { EnquiryModal } from "../components/enquiry-modal";
 import { MarbleParallax } from "../components/marble-parallax";
@@ -38,13 +39,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <PointerPositionProvider>
           <MarbleParallax />
+          <ArtifactParallax />
           <ViewportVignette />
-          <div className="relative z-10 flex min-h-screen flex-col">
-            <header className="flex items-center justify-end px-4 py-4">
+          <div className="relative flex min-h-screen flex-col">
+            <header className="relative z-10 flex items-center justify-end px-4 py-4">
               <EnquiryModal />
             </header>
-            <main className="flex flex-1">{children}</main>
-            <footer className="px-4 py-4">
+            <main className="relative z-[5] flex flex-1">{children}</main>
+            <footer className="relative z-10 px-4 py-4">
               <div className="flex w-full items-end justify-between">
                 <div className="border-t-4 border-ink pt-2">
                   <div className="flex h-8 border border-ink">
