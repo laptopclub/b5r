@@ -109,9 +109,12 @@ importers:
 
   .:
     dependencies:
+      '@laptopclub/foundation-analytics':
+        specifier: 0.1.38
+        version: 0.1.38(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       '@laptopclub/foundation-ui':
-        specifier: 0.1.33
-        version: 0.1.33(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+        specifier: 0.1.38
+        version: 0.1.38(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -123,8 +126,8 @@ importers:
         version: 19.3.0(react@19.3.0)
     devDependencies:
       '@laptopclub/foundation-config':
-        specifier: 0.1.33
-        version: 0.1.33(tailwindcss@3.4.19)
+        specifier: 0.1.38
+        version: 0.1.38(tailwindcss@3.4.19)
       '@types/node':
         specifier: 24.13.4
         version: 24.13.4
@@ -480,13 +483,19 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@laptopclub/foundation-config@0.1.33':
-    resolution: {integrity: sha512-Fb11LIPR3Cv+5AS8K55ZBmtJBb/4unhpWxYr0XVDMCsWodjitl1dzhKZTEVw7qaeZC/OINrCujFqrVxsRtraTg==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-config/0.1.33/09001d83d077734f10e893f3804ada7a1d9d12f5}
+  '@laptopclub/foundation-analytics@0.1.38':
+    resolution: {integrity: sha512-nS7rivtyeEUgz8oDh1FOfqojS/K9JYn6Ox0qIMrXBbX8bxhwePvMthL5nXljRzA2yxy//QAXv0Gz+jK0JLvx1Q==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-analytics/0.1.38/b10ba60a5b3a6b3b1b9c49f4064a53744eaa9cdc}
+    peerDependencies:
+      next: ^15.0.0 || ^16.0.0
+      react: ^19.0.0
+
+  '@laptopclub/foundation-config@0.1.38':
+    resolution: {integrity: sha512-tMq3yryxoxOWuOneF900R5AId8oZFrn47EYspXNnB35Iny/Ab1HmOsU6UH26yovHNrfBke78kp6AzA/gM03yAw==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-config/0.1.38/3aabc44ca088b4db72812000af0f3e16bed29f1f}
     peerDependencies:
       tailwindcss: ^3.4.0
 
-  '@laptopclub/foundation-ui@0.1.33':
-    resolution: {integrity: sha512-dHn8hrA7MvuzLlnOYnB8ZK1JTIRAinsS5KS5baf/n94tv/0VRu7omutPm2oVs8kiIGAilWmPtFb5NlXmMizxAw==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-ui/0.1.33/287eed7ef20d6fd4bb87b8433fc6fdb562b81eef}
+  '@laptopclub/foundation-ui@0.1.38':
+    resolution: {integrity: sha512-x1YNRQq5qPFQtSvCdIXuR0z5g2MSSVM2wRNH3hsPUosx27zBP4tHDHEITLwCD+M8Z8gX/Nb/2NiGW+WTDIOl2w==, tarball: https://npm.pkg.github.com/download/@laptopclub/foundation-ui/0.1.38/77efa8df291fe5edfb043c65d74a9fef70d88417}
     peerDependencies:
       next: ^16.0.0
       react: ^19.0.0
@@ -2463,11 +2472,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@laptopclub/foundation-config@0.1.33(tailwindcss@3.4.19)':
+  '@laptopclub/foundation-analytics@0.1.38(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+    dependencies:
+      next: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      react: 19.3.0
+
+  '@laptopclub/foundation-config@0.1.38(tailwindcss@3.4.19)':
     dependencies:
       tailwindcss: 3.4.19
 
-  '@laptopclub/foundation-ui@0.1.33(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+  '@laptopclub/foundation-ui@0.1.38(next@16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@portabletext/react': 3.2.4(react@19.3.0)
       '@portabletext/types': 2.0.15

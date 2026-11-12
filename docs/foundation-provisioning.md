@@ -8,7 +8,7 @@ Last reviewed: 2026-10-12
 - Production URL: https://b5r.uk
 - Redirect domain: https://b5r.co.uk
 - Vercel project: `laptopclub/b5r`
-- Foundation packages: `@laptopclub/foundation-ui` and `@laptopclub/foundation-config` 0.1.32
+- Foundation packages: `@laptopclub/foundation-analytics`, `@laptopclub/foundation-ui` and `@laptopclub/foundation-config` 0.1.38
 - Content model: code-managed landing page. Sanity is intentionally deferred.
 
 ## Checklist status

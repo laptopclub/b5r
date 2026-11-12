@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { B5RAnalyticsConsent } from "../components/analytics-consent";
 import { ArtifactParallax } from "../components/artifact-parallax";
 import { AxisIndicators } from "../components/axis-indicators";
 import { EnquiryModal } from "../components/enquiry-modal";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </footer>
             <AxisIndicators />
           </div>
+          <B5RAnalyticsConsent />
         </PointerPositionProvider>
       </body>
     </html>
