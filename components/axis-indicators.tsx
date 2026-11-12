@@ -1,44 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { usePointerPosition } from "./pointer-position-provider";
 
 const ticks = Array.from({ length: 11 }, (_, index) => index * 10);
 
-type PointerPosition = {
-  x: number;
-  y: number;
-};
-
 export function AxisIndicators() {
-  const [position, setPosition] = useState<PointerPosition>({ x: 50, y: 50 });
-
-  useEffect(() => {
-    let frameId: number | undefined;
-
-    const updatePosition = (event: PointerEvent) => {
-      if (frameId !== undefined) {
-        cancelAnimationFrame(frameId);
-      }
-
-      frameId = requestAnimationFrame(() => {
-        setPosition({
-          x: (event.clientX / window.innerWidth) * 100,
-          y: (event.clientY / window.innerHeight) * 100
-        });
-        frameId = undefined;
-      });
-    };
-
-    window.addEventListener("pointermove", updatePosition, { passive: true });
-
-    return () => {
-      window.removeEventListener("pointermove", updatePosition);
-
-      if (frameId !== undefined) {
-        cancelAnimationFrame(frameId);
-      }
-    };
-  }, []);
+  const position = usePointerPosition();
 
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-50">
