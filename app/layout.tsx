@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AxisIndicators } from "../components/axis-indicators";
 import { EnquiryModal } from "../components/enquiry-modal";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </div>
           </footer>
         </div>
+        <AxisIndicators />
       </body>
     </html>
   );
