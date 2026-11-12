@@ -4,6 +4,7 @@ import { EnquiryModal } from "../components/enquiry-modal";
 import { MarbleParallax } from "../components/marble-parallax";
 import { PointerPositionProvider } from "../components/pointer-position-provider";
 import { RockHornsIcon } from "../components/rock-horns-icon";
+import { ViewportVignette } from "../components/viewport-vignette";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <PointerPositionProvider>
           <MarbleParallax />
+          <ViewportVignette />
           <div className="relative z-10 flex min-h-screen flex-col">
             <header className="flex items-center justify-end px-4 py-4">
               <EnquiryModal />
