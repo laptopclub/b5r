@@ -9,6 +9,7 @@ export const contentType = "image/png";
 
 const pixelMap = [
   "0000000000##0",
+  "0000000000##0",
   "0##0000000##0",
   "0##0000000##0",
   "0##0000000##0",
@@ -44,7 +45,7 @@ export default function Icon() {
               height: 2,
               left: x * 2 + 3,
               position: "absolute",
-              top: y * 2 + 2,
+              top: y * 2 + 1,
               width: 2
             }}
           />
