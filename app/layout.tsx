@@ -42,7 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="flex w-full items-end justify-between">
               <div className="border-t-4 border-ink pt-2">
                 <div className="flex h-8 border border-ink">
-                  <RockHornsIcon className="h-[30px] w-[26px] shrink-0 text-ink" />
+                  <RockHornsIcon className="size-[30px] shrink-0 text-ink" />
                   <p className="m-0 flex items-center px-2 font-mono text-sm leading-none">© 2026</p>
                 </div>
               </div>
