@@ -6,16 +6,16 @@ const ticks = Array.from({ length: 11 }, (_, index) => index * 10);
 
 const tickLengths = {
   horizontal: {
-    major: "h-5",
-    medium: "h-3",
-    midpoint: "h-4",
-    minor: "h-2"
+    major: "h-2.5",
+    medium: "h-1.5",
+    midpoint: "h-2",
+    minor: "h-1"
   },
   vertical: {
-    major: "w-5",
-    medium: "w-3",
-    midpoint: "w-4",
-    minor: "w-2"
+    major: "w-2.5",
+    medium: "w-1.5",
+    midpoint: "w-2",
+    minor: "w-1"
   }
 } as const;
 
