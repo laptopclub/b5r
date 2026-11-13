@@ -33,7 +33,7 @@ export function AxisIndicators() {
       <div className="absolute bottom-4 left-1/2 h-6 w-[min(18rem,calc(100vw-2rem))] -translate-x-1/2">
         <div className="absolute inset-x-0 top-1/2 h-px bg-ink-muted" />
         {ticks.map((offset) => (
-          <div key={offset} className={`absolute top-1/2 w-px -translate-y-1/2 bg-ink-muted ${tickLength(offset, "horizontal")}`} style={{ left: `${offset}%` }} />
+          <div key={offset} className={`absolute bottom-1/2 w-px bg-ink-muted ${tickLength(offset, "horizontal")}`} style={{ left: `${offset}%` }} />
         ))}
         <div className="absolute top-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-4 border-x-transparent border-t-[6px] border-t-ink" style={{ left: `${position.x}%` }} />
       </div>
@@ -41,9 +41,9 @@ export function AxisIndicators() {
       <div className="absolute right-4 top-1/2 h-[min(18rem,calc(100vh-8rem))] w-6 -translate-y-1/2">
         <div className="absolute bottom-0 left-1/2 top-0 w-px -translate-x-1/2 bg-ink-muted" />
         {ticks.map((offset) => (
-          <div key={offset} className={`absolute left-1/2 h-px -translate-x-1/2 bg-ink-muted ${tickLength(offset, "vertical")}`} style={{ top: `${offset}%` }} />
+          <div key={offset} className={`absolute right-1/2 h-px bg-ink-muted ${tickLength(offset, "vertical")}`} style={{ top: `${offset}%` }} />
         ))}
-        <div className="absolute left-1/2 h-0 w-0 -translate-y-1/2 border-y-4 border-y-transparent border-r-[6px] border-r-ink" style={{ top: `${position.y}%` }} />
+        <div className="absolute left-1/2 h-0 w-0 -translate-x-full -translate-y-1/2 border-y-4 border-y-transparent border-l-[6px] border-l-ink" style={{ top: `${position.y}%` }} />
       </div>
     </div>
   );
