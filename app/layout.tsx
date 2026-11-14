@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geistMono.variable} ${geistPixel.variable} ${melvorn.variable}`}>
+    <html lang="en" className={`${geistMono.variable} ${geistPixel.variable} ${melvorn.variable} overscroll-none`}>
       <body className="bg-surface-base font-mono text-ink selection:bg-accent selection:text-accent-contrast">
         <PointerPositionProvider>
           <MarbleParallax />
           <ArtifactParallax />
           <ViewportVignette />
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative flex min-h-[100dvh] flex-col">
             <header className="relative z-10 flex items-center justify-end px-4 py-4">
               <EnquiryModal />
             </header>
